@@ -1,27 +1,56 @@
-# DroomsStarWarsApplication
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
-
-## Development server
+## Run the Application
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Create a single-page "Star Wars" application using [SWAPI](https://swapi.dev/documentation)[ ](https://swapi.dev/documentation) that satisﬁes the following business requirements:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Scenario 1: Show home page
 
-## Build
+- When the user opens the application
+- Then the user should see a list of "Star Wars" movies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Scenario 2: Navigate to movie details page from home page
 
-## Running unit tests
+- Given the user has opened the home page
+- When the user clicks on a movie name
+- Then the user should be redirected to the movie details page
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Scenario 3: Show movie details page
 
-## Running end-to-end tests
+- When the user opens the movie details page
+- Then the movie title, producer, director, and release date should be displayed
+- And the opening crawl of the movie should be shown
+- And a list of characters should be displayed
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Scenario 4: Navigate to character details page from movie details page
 
-## Further help
+- Given the user has opened the movie details page
+- When the user clicks on a character name
+- Then the user should be redirected to the character details page
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Scenario 5: Show character details page
+
+- When the user opens the character details page
+- Then the character's personal data should be displayed
+- And a list of movies in which the character appeared should be shown
+
+### Scenario 6: Navigate to movie details from character details page
+
+- Given the user has opened the character details page
+- When the user clicks on a movie name
+- Then the user should be redirected to the movie details page
+
+## Technical requirements:
+
+- Use [Angular](https://angular.io/).
+- Use [Angular](https://angular.io/guide/routing-overview)[ ](https://angular.io/guide/routing-overview)[Routing](https://angular.io/guide/routing-overview).
+- Show spinner(s) during data loading.
+- Avoid extra requests: don't request the data from the API if you have already loaded it.
+- Use [Angular](https://material.angular.io/)[ ](https://material.angular.io/)[Material](https://material.angular.io/), [Bootstrap](https://getbootstrap.com/), or any other library to set up basic styles.
+- Use any other libraries if you need them.
+- The application should support the latest version of Google Chrome.
+
+Would be a plus:
+
+- Use [NgRx](https://ngrx.io/)[ ](https://ngrx.io/)or similar libraries for state management.
+- Create a mobile-friendly (responsive) design.
